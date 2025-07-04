@@ -6,7 +6,7 @@ function CityList() {
 
   return (
     <div>
-      <h2>Select a City</h2>
+      <h2>Select a City to Display Weather </h2>
       <ul>
         {cities.map(city => (
           <li key={city}>
