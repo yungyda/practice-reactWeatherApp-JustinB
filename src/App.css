@@ -1,55 +1,68 @@
-/* Apply a gradient background to the whole page */
-body {
+/* Reset and full-page layout */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom right, #a18cd1, #fbc2eb);
-  min-height: 100vh;
+  background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* This will center the container and style it nicely */
+/* Container styling */
 .container {
-  background-color: #ffffffcc; /* semi-transparent white */
-  padding: 2rem 3rem;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 3rem 4rem;
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
   text-align: center;
+  width: 100%;
   max-width: 600px;
-  width: 90%;
 }
 
-/* Headers and text color */
-h1, h2, h3, p {
+/* Headings */
+h1, h2, h3 {
   color: #333;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  color: #555;
 }
 
 /* Buttons */
 button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 1rem;
   background-color: #673ab7;
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 1rem;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 button:hover {
   background-color: #512da8;
 }
 
-/* City links */
+/* City Links */
 .city-link {
   display: block;
-  margin: 1rem 0;
   font-size: 1.25rem;
+  margin: 1rem 0;
   color: #e91e63;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .city-link:hover {
